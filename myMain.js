@@ -26,7 +26,7 @@ var myFunctionHolder ={};
     //execute only when window is fully loaded
     window.onload = function () {
 
-    var mapObject = L.map('mapDivId').setView([4.51, 19.87], 11);
+    var mapObject = L.map('mapDivId').setView([3.090739, 17.404454], 4);
     var baseMap = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiMTIzODIiLCJhIjoiY2pjaTRscWllMmV0ZTMzbnptZXppczA1MCJ9.DbUREsZcMMNHEBwqytnWnA', {
       maxZoom: 100,
       attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
