@@ -27,7 +27,7 @@ var myFunctionHolder ={};
     window.onload = function () {
 
     var mapObject = L.map('mapDivId').setView([39.99, -75.16], 11);
-    var baseMap = L.tileLayer('https://api.mapbox.com/styles/v1/12382/cjci5jqqc7xag2rlp6inpmdea/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiMTIzODIiLCJhIjoiY2pjaTRscWllMmV0ZTMzbnptZXppczA1MCJ9.DbUREsZcMMNHEBwqytnWnA', {
+    var baseMap = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiMTIzODIiLCJhIjoiY2pjaTRscWllMmV0ZTMzbnptZXppczA1MCJ9.DbUREsZcMMNHEBwqytnWnA', {
       maxZoom: 18,
       attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
     }).addTo(mapObject);
