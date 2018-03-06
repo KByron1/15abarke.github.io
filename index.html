@@ -11,14 +11,31 @@
   <script src="leaflet.js"></script>
   <script src="heatmap.js"></script>
   <script src="leaflet-heatmap.js"></script>
-  <script src="Bike_Thefts_sample.js"></script>
+  <script src="ViolenceData.geojson"></script>
   <script src="myMain.js"></script>
   <script src="heatmap-data.js"></script>
-   <script src="ViolenceData.geojson"></script>
 </head>
 
 <body>
-
+<script>
+  function pointToCircle(feature, latlng) {
+    var geojsonMarkerOptions = {
+      radius: 8,
+      fillColor: "blue",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0.8
+    ];
+      var circleMarker = L.circleMarker(latlng, geojsonMarkerOptions);
+      
+      return circleMarker;
+    }
+    function addPopups(feature, layer) {
+      if(feature.properties) {
+        layer.bindPopup(feature.properties);
+      }
+    }
+  </script>
   <div id="mapDivId"></div>
 
 </body>
